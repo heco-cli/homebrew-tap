@@ -20,13 +20,7 @@ class Heco < Formula
   def install
     bin.install "heco"
 
-    # 生成自动补全脚本（要求 heco 在当前平台可运行）
-    # system "#{bin}/heco", "completion", "bash", ">", "heco.bash"
-    # bash_completion.install "heco.bash" => "heco"
-    # system "#{bin}/heco", "completion", "zsh", ">", "_heco"
-    # zsh_completion.install "_heco"
-    
-    # 或者使用 Homebrew 内置的方法（前提是 heco 能够正常运行输出补全内容）：
+    # 生成自动补全脚本
     generate_completions_from_executable(bin/"heco", "completion")
   end
 
