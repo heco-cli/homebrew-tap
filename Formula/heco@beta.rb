@@ -1,4 +1,4 @@
-class Heco < Formula
+class HecoATbeta < Formula
   desc "The HMOS app development tool built for you and AI"
   homepage "https://github.com/heco-cli/heco"
   version "0.0.1"
