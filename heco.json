@@ -1,0 +1,29 @@
+{
+    "version": "0.0.1",
+    "description": "The HMOS app development tool built for you and AI",
+    "homepage": "https://github.com/heco-cli/heco",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/heco-cli/heco/releases/download/v0.0.1/heco-v0.0.1-x86_64-pc-windows-msvc.zip",
+            "hash": "REPLACE_WITH_WINDOWS_X86_64_SHA256"
+        },
+        "arm64": {
+            "url": "https://github.com/heco-cli/heco/releases/download/v0.0.1/heco-v0.0.1-aarch64-pc-windows-msvc.zip",
+            "hash": "REPLACE_WITH_WINDOWS_ARM64_SHA256"
+        }
+    },
+    "extract_dir": "",
+    "bin": "heco.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/heco-cli/heco/releases/download/v$version/heco-v$version-x86_64-pc-windows-msvc.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/heco-cli/heco/releases/download/v$version/heco-v$version-aarch64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}
