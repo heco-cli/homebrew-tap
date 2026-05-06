@@ -1,7 +1,7 @@
 class Heco < Formula
   desc "The HMOS app development tool built for you and AI"
   homepage "https://github.com/heco-cli/heco"
-  version "0.0.1"
+  version "0.1.0"
   license "Apache-2.0"
 
   depends_on :macos
@@ -9,10 +9,10 @@ class Heco < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/heco-cli/heco/releases/download/v#{version}/heco-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "bf814c397cbc646dc2778e9cf1fb34f08b165f732066e01814431c38610856b8" # MAC_INTEL
+      sha256 "5ac863c1d2cc7185dd571d2463439908687a3d6ddd724088e42888a276be3dba" # MAC_INTEL
     elsif Hardware::CPU.arm?
       url "https://github.com/heco-cli/heco/releases/download/v#{version}/heco-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "11bfc984bb1788d7731556aa7145de0386408dc3d86f8cf1de506697fac25246" # MAC_ARM
+      sha256 "f7cfb3234802309d4ee9e5269c29dac6597798100f2307fa61d5b0a691e2c09a" # MAC_ARM
     end
   end
 
